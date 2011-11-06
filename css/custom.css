@@ -1,0 +1,24 @@
+body { background: url("../images/paper-tile.jpg"); padding: 0px; margin: 0px;}
+
+h1, a, p { font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;}
+
+hr { clear: both; visibility: hidden;}
+
+.wrapper { width: 960px; margin: 0px auto;}
+
+.header { position: relative; margin-top: 100px;}
+.header h1 { display: inline; margin-left: 40px; font-size: 45px; position: relative; top: 20px;}
+.nav-link { position: relative; display: inline; margin-right: 40px; float: right;}
+.nav-link .selected { position: absolute; top: 0px; left: 0px; opacity: 0;}
+
+#about { padding: 40px 40px 0px;}
+
+
+.horizontal-stroke { width: 100%; height: 2px; background: #000; position: absolute; top: 213px;}
+
+.content-tab { overflow: hidden; position: relative; height: 700px; margin-top: 75px;}
+.content-tab img { border: solid 5px #fff; margin-bottom: 20px;}
+
+.column-1 { width: 290px; position: absolute; right: -290px;}
+.column-2 { width: 290px; position: absolute; right: -1110px;}
+.column-3 { width: 290px; position: absolute; right: -1980px;}
