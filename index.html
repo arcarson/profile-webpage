@@ -7,44 +7,52 @@
     <script type="text/javascript" src="./js/custom.js"></script>   
   </head>
   <body>
-     <div class="wrapper">
-      <div class="header">
-        <h1>Andrew Carson</h1>
-        <div class="nav-link">
-          <a href="#"><img src="./images/contact-icon.png"></a>
-          <a href="#"><img class="selected" src="./images/contact-icon-selected.png"></a>
+    <div id="header">
+      <div class="wrapper">
+        <div id="name">
+          <h1>Andrew Carson</h1>
+          <img src="./images/highlight.png" />
         </div>
-        <div class="nav-link">
-          <a href="#"><img src="./images/work-icon.png"></a>
-          <a id="work" href="#"><img class="selected" src="./images/work-icon-selected.png"></a>
+        <div id="nav">
+          <div class="nav-link">
+            <a href="#"><img src="./images/about-icon.png" /></a>
+            <!-- <a href="#about"><img class="selected" src="./images/about-icon-selected.png"></a> -->
+          </div>
+          <div class="nav-link">
+            <a href="#"><img src="./images/work-icon.png" /></a>
+            <!-- <a id="work" href="#"><img class="selected" src="./images/work-icon-selected.png"></a> -->
+          </div>
         </div>
-        <div class="nav-link">
-          <a href="#"><img src="./images/about-icon.png"></a>
-          <a href="#about"><img class="selected" src="./images/about-icon-selected.png"></a>
+        <div id="contact">
+          <div class="contact-link">
+            <a href="#"><img src="./images/mobile-icon.png" /></a>
+          </div>
+          <div class="contact-link">
+            <a href="#"><img src="./images/linkedin-icon.png" /></a>
+          </div>
+          <div class="contact-link">
+            <a href="#"><img src="./images/email-icon.png" /></a>
+          </div>
         </div>
-        <hr>        
+        <hr>
+      </div>        
+    </div>
+    <div id="main-content">
+      <div class="wrapper">
+        <div class="border profile-image">
+          <img src="./images/profile-pic.jpg" />
+        </div>
+        <div id="profile-text">
+          <p><span>Hi, my name is Andy Carson,</span></p>
+          <p>I am a web designer and frontend developer living in Melbourne, Australia.</p>
+          <p>I am relatively new to web design after having spent ten years as a chef. I strive to write clean compliant HTML, CSS and scss. I have a keen interest in JavaScript and Jquery and work hard to constantly improve my skills.  I have also recently begun dabbling in rails!</p>
+          <p>I work hard to constantly learn, refine my skills and broaden my knowledge base of all things web.</p>
+          <p>I'm happiest when I am learning new things.</p>
+        </div>
+        <hr>
       </div>
-      <!-- <div id="about" class="content-tab">
-        <p>Placerat tincidunt imperdiet. Sodales proin placerat. Mi vestibulum rutrum vestibulum dolor consequat. Feugiat diam at in mus commodo sit amet wisi. Scelerisque pulvinar nibh dapibus eget nunc dolor tellus id eu luctus libero. Vitae vivamus mattis vivamus curabitur sapien nec rutrum justo. Massa augue curabitur.</p>
-      </div> -->
-      <div class="content-tab">
-        <div class="column-1">
-          <img src="images/porfolio-image-1.jpg" width="290" height="160" alt="Porfolio Image 1">
-          <img src="images/porfolio-image-1.jpg" width="290" height="160" alt="Porfolio Image 1">
-          <img src="images/porfolio-image-1.jpg" width="290" height="160" alt="Porfolio Image 1">
-        </div>
-        <div class="column-2">
-          <img src="images/porfolio-image-1.jpg" width="290" height="160" alt="Porfolio Image 1">
-          <img src="images/porfolio-image-1.jpg" width="290" height="160" alt="Porfolio Image 1">
-          <img src="images/porfolio-image-1.jpg" width="290" height="160" alt="Porfolio Image 1">
-        </div>
-        <div class="column-3">
-          <img src="images/porfolio-image-1.jpg" width="290" height="160" alt="Porfolio Image 1">
-          <img src="images/porfolio-image-1.jpg" width="290" height="160" alt="Porfolio Image 1">
-          <img src="images/porfolio-image-1.jpg" width="290" height="160" alt="Porfolio Image 1">
-        </div>
-      </div>
-     </div>
-     <div class="horizontal-stroke"></div>
+    </div>
+    <div id="footer"></div>
+    
 </body>
 </html>
