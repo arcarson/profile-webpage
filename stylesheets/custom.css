@@ -62,8 +62,10 @@ hr { clear: both; visibility: hidden; margin: 0px;}
 #project-content img { border: solid 1px #b7b7b7; clear: both; margin: 15px;}
 #project-text { width: 306px; float: left; margin-right: 20px;}
 #project-text h2 { margin-top: 0px; line-height: 1.25em;}
+#project-text a { color: #019cbc; text-decoration: none;/* text-shadow: none;*/ font-weight: bold;}
+#project-text a:hover { color: #00b0d4;}
 
-#skills p { background: url('../images/tick-icon.png') no-repeat 120px 0px; }
+#skills p { background: url('../images/tick-icon.png') no-repeat 128px 0px; }
 
 #footer { border-top: solid 1px #dadada; min-height: 140px;}
 

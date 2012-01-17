@@ -8,7 +8,6 @@ $(document).ready(function() {
     $(this).stop().animate({"opacity": "0"}, "normal")
   });
   
-  // $('#mobile-window p').css({'margin-left' : '-98px'});
   
   $('#contact :first-child a').toggle(
     function() {
@@ -32,4 +31,13 @@ $(document).ready(function() {
       $(this).children('h2').stop().animate({color: '#00b0d4'})
       $(this).children('img').stop().animate({borderColor: '#bbbbbb'})
     });
+    
+    // $('#project-content .project-screenshot a').hover(
+    // function() {
+    //   $(this).parent().animate({borderColor: '#00b0d4'})
+    // },
+    // function() {
+    //   $(this).parent().animate({borderColor: '#aeaeae'})
+    // });
+    
 });
