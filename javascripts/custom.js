@@ -41,3 +41,49 @@ $(document).ready(function() {
     // });
     
 });
+
+$(function () {
+                setInterval(matchDetailsUpdate, 60000);
+            });
+
+            $('.refresh').click(matchUpdateRefresh);
+
+            function matchUpdateRefresh(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                matchDetailsUpdate();
+            };
+            
+            function matchDetailsUpdate() {
+
+                $.ajax({
+                    url: "http://nrlservice.local/NRLService.svc/GetMatchCentre?SecurityToken=VALIDTOKEN&WebsiteID=11",
+                    dataType: 'jsonp',
+                    pageCache: true,
+                    success: function (json) {
+
+                        $.each(json.Match, function (i, match) {
+
+                            $('.gameTime').text(match.MatchTime);
+
+                            $('.teamHome .score').text(match.HomeTeamScore);
+
+                            $('.teamAway .score').text(match.AwayTeamScore);
+
+
+                            $.each(match.AwayTryScorers, function (i, awaytryscorers) {
+                                i.stopPropagation();
+                                $('.teamAway ul').append('<li><strong>' + awaytryscorers.Player + '</strong><em>' + awaytryscorers.TryTime + '</em></li>');
+                                
+                            });
+                            
+                            $.each(match.HomeTryScorers, function (i, hometryscorers) {
+                                i.stopPropagation();
+                                $('.teamHome ul').append('<li><strong>' + hometryscorers.Player + '</strong><em>' + hometryscorers.TryTime + '</em></li>');
+
+                            });
+                            return false;
+                        });
+                    }
+                });
+            }
