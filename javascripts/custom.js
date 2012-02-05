@@ -87,3 +87,15 @@ $(function () {
                     }
                 });
             }
+            
+            // column heigh equalizer
+            
+    function heightAdjust() {
+
+    var contentHeight = $(".mainColumn").height();
+    var sideHeight = $(".secColWrapper").height();    
+
+    if (contentHeight > sideHeight) {  
+        $(".secColWrapper").css("height", contentHeight);
+    }
+}
