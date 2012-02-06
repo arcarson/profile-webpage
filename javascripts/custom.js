@@ -99,3 +99,23 @@ $(function () {
         $(".secColWrapper").css("height", contentHeight);
     }
 }
+
+@font-face {
+  font-family: "Your typeface";
+  src: url("type/filename.eot");
+  src: local("☺"),
+    url("type/filename.woff") format("woff"),
+    url("type/filename.otf") format("opentype"),
+    url("type/filename.svg#filename") format("svg");
+  }
+@font-face {
+  font-family: "Your italic typeface";
+  src: url("type/filename-ital.eot");
+  src: local("☺"),
+    url("type/filename-ital.woff") format("woff"),
+    url("type/filename-ital.otf") format("opentype"),
+    url("type/filename-ital.svg#filename-ital") format("svg");
+  }
+h2 { font-family: "Your typeface", Georgia, serif; }
+h2 em { font-family: "Your italic typeface", Georgia, serif; }
+em { font-style: italic; }
