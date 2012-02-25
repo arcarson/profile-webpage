@@ -19,7 +19,6 @@ $(document).ready(function() {
       return false
     });
    
-   
   $('#main-content .project-tab').hover(
     function() {
       $(this).stop().animate({ backgroundColor: '#00b0d4'})
