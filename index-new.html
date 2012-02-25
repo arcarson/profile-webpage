@@ -1,0 +1,126 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/i/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title></title>
+  <meta name="description" content="">
+
+  <!-- Mobile viewport optimized: h5bp.com/viewport -->
+  <meta name="viewport" content="width=device-width">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+  <!-- All JavaScript at the bottom, except this Modernizr build.
+       Modernizr enables HTML5 elements & feature detects for optimal performance.
+       Create your own custom Modernizr build: www.modernizr.com/download/ -->
+  <script src="js/libs/modernizr-2.5.0.min.js"></script>
+</head>
+<body>
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <header>
+
+  </header>
+  <div id="main-content" role="main">
+    <div class="wrapper">
+      <div class="border profile-image">
+        <img src="./img/profile-pic2.jpg" />
+      </div>
+      <div id="profile-text">
+        <p><span>Hi, my name is Andy Carson,</span></p>
+        <p>I am a web designer and frontend developer living in Melbourne, Australia.</p>
+        <p>I work with Photoshop, HTML, CSS, SCSS, JavaScript and Git, I have also recently begun dabbling in rails.</p>
+        <p>I strive to make all my code clean, compliant and accessible. I have a strong drive to work hard and to constantly improve my skills which I do through equal parts curiosity, tenacity and hair pulling!</p>
+        <p>With a creative background after studying fine arts at the University of Tasmania in Hobart, I am equally interested in the design process.</p>
+        <p>I think that this is an extremely exciting area to be working in right now. It's an industry that is constantly growing and redefining its self, continually throwing up new challenges and new solutions to old problems, it's the kind of job where you never stop learning.</p>         
+      </div>
+      <hr>
+      <a href="projects/young-achiever-award.html" class="project-tab">
+        <img src="./img/project-thumbnail-young-achiever-award.jpg" alt="the Young Achiever Award thumbnail" />
+        <h2>Young Achiever Award</h2>
+        <p>website design and development</p>
+      </a>
+      <a href="projects/the-australian-boatrace.html" class="project-tab">
+        <img src="./img/project-thumbnail-australian-boatrace.jpg" alt="the Australian Boat Race thumbnail" />
+        <h2>The Australian Boat Race</h2>
+        <p>website design and development</p>
+      </a>
+      <a href="projects/staff-homepage.html" class="project-tab last">
+        <img src="./img/project-thumbnail-staff-homepage.jpg" alt="University of Melbourne Staff Homepage thumbnail" />
+        <h2>Staff Homepage</h2>
+        <p>website design and development</p>
+      </a>
+      <a href="projects/why-melbourne.html" class="project-tab">
+        <img src="./img/project-thumbnail-why-melbourne.jpg" alt="University of Melbourne Why Melbourne thumbnail" />
+        <h2>Why Melbourne</h2>
+        <p>website design and development</p>
+      </a>
+      <a href="projects/academic-procession-webapp.html" class="project-tab">
+        <img src="./img/project-thumbnail-graduation-webapp.jpg" alt="University of Melbourne academic procession application webapp thumbnail" />
+        <h2>UoM Academic Procession</h2>
+        <p>wire framing and front end development</p>
+      </a>
+      <a href="projects/buildlock.html" class="project-tab last">
+        <img src="./img/project-thumbnail-buildlock.jpg" alt="Buildlock website thumbnail" />
+        <h2>Buildlock</h2>
+        <p>website design and development</p>
+      </a>
+      <a href="projects/change-of-preference.html" class="project-tab">
+        <img src="./img/project-thumbnail-change-of-preference.jpg" alt="University of Melbourne Change of Preference thumbnail" />
+        <h2>UoM Change of Preference</h2>
+        <p>content management</p>
+      </a>
+      <a href="projects/msi.html" class="project-tab">
+        <img src="./img/project-thumbnail-msi.jpg" alt="Melbourne School of Information thumbnail" />
+        <h2>MSI</h2>
+        <p>content management</p>
+      </a>
+      <a href="projects/msi-landingpage.html" class="project-tab last">
+        <img src="./img/project-thumbnail-msi-landingpage.jpg" alt="Melbourne School of Information Landing Page thumbnail" />
+        <h2>MSI Landing Page</h2>
+        <p>website design and development</p>
+      </a>
+      <hr>
+    </div>
+  </div>
+  <footer>
+
+  </footer>
+
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+
+  <!-- scripts concatenated and minified via build script -->
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <!-- end scripts -->
+
+  <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
+       mathiasbynens.be/notes/async-analytics-snippet -->
+  <script>
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+</body>
+</html>
