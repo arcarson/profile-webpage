@@ -33,74 +33,82 @@
   <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
        chromium.org/developers/how-tos/chrome-frame-getting-started -->
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-  <header>
 
-  </header>
-  <div id="main-content" role="main">
     <div class="wrapper">
-      <div class="border profile-image">
-        <img src="./img/profile-pic2.jpg" />
-      </div>
-      <div id="profile-text">
-        <p><span>Hi, my name is Andy Carson,</span></p>
-        <p>I am a web designer and frontend developer living in Melbourne, Australia.</p>
-        <p>I work with Photoshop, HTML, CSS, SCSS, JavaScript and Git, I have also recently begun dabbling in rails.</p>
-        <p>I strive to make all my code clean, compliant and accessible. I have a strong drive to work hard and to constantly improve my skills which I do through equal parts curiosity, tenacity and hair pulling!</p>
-        <p>With a creative background after studying fine arts at the University of Tasmania in Hobart, I am equally interested in the design process.</p>
-        <p>I think that this is an extremely exciting area to be working in right now. It's an industry that is constantly growing and redefining its self, continually throwing up new challenges and new solutions to old problems, it's the kind of job where you never stop learning.</p>         
-      </div>
-      <hr>
-      <a href="projects/young-achiever-award.html" class="project-tab">
-        <img src="./img/project-thumbnail-young-achiever-award.jpg" alt="the Young Achiever Award thumbnail" />
-        <h2>Young Achiever Award</h2>
-        <p>website design and development</p>
-      </a>
-      <a href="projects/the-australian-boatrace.html" class="project-tab">
-        <img src="./img/project-thumbnail-australian-boatrace.jpg" alt="the Australian Boat Race thumbnail" />
-        <h2>The Australian Boat Race</h2>
-        <p>website design and development</p>
-      </a>
-      <a href="projects/staff-homepage.html" class="project-tab last">
-        <img src="./img/project-thumbnail-staff-homepage.jpg" alt="University of Melbourne Staff Homepage thumbnail" />
-        <h2>Staff Homepage</h2>
-        <p>website design and development</p>
-      </a>
-      <a href="projects/why-melbourne.html" class="project-tab">
-        <img src="./img/project-thumbnail-why-melbourne.jpg" alt="University of Melbourne Why Melbourne thumbnail" />
-        <h2>Why Melbourne</h2>
-        <p>website design and development</p>
-      </a>
-      <a href="projects/academic-procession-webapp.html" class="project-tab">
-        <img src="./img/project-thumbnail-graduation-webapp.jpg" alt="University of Melbourne academic procession application webapp thumbnail" />
-        <h2>UoM Academic Procession</h2>
-        <p>wire framing and front end development</p>
-      </a>
-      <a href="projects/buildlock.html" class="project-tab last">
-        <img src="./img/project-thumbnail-buildlock.jpg" alt="Buildlock website thumbnail" />
-        <h2>Buildlock</h2>
-        <p>website design and development</p>
-      </a>
-      <a href="projects/change-of-preference.html" class="project-tab">
-        <img src="./img/project-thumbnail-change-of-preference.jpg" alt="University of Melbourne Change of Preference thumbnail" />
-        <h2>UoM Change of Preference</h2>
-        <p>content management</p>
-      </a>
-      <a href="projects/msi.html" class="project-tab">
-        <img src="./img/project-thumbnail-msi.jpg" alt="Melbourne School of Information thumbnail" />
-        <h2>MSI</h2>
-        <p>content management</p>
-      </a>
-      <a href="projects/msi-landingpage.html" class="project-tab last">
-        <img src="./img/project-thumbnail-msi-landingpage.jpg" alt="Melbourne School of Information Landing Page thumbnail" />
-        <h2>MSI Landing Page</h2>
-        <p>website design and development</p>
-      </a>
+      <section id="profile">
+        <section id="profile-main">
+          <p><em>Hi, my name is <span>Andy Carson</span></em></p>
+          <p>I am a web designer and frontend developer living in Melbourne, Australia.</p>
+          <p>I work with Photoshop, HTML, CSS, SCSS, JavaScript and Git, I have also recently begun dabbling in rails.</p>
+          <p>I strive to make all my code clean, compliant and accessible. I have a strong drive to work hard and to constantly improve my skills which I do through equal parts curiosity, tenacity and hair pulling!</p>
+          <ul id="skills-graph" class="ir">
+            <li>photoshop: 10/10 - baller</li>
+            <li>design: 6/10 - fair</li>
+            <li>html/css: 9/10 - rockin'</li>
+            <li>jquery/javascript: 5/10 - getting there</li>
+            <li>rails: 2/10 - enthusiastic noob</li>
+          </ul>
+        </section>
+        <aside>
+          <img id="profile-pic" src="./img/profile-pic.jpg" />
+          <ul>
+            <li class="email"><a class="slide-inner" href="#">hello@andyrosscarson.com.au</a></li>
+            <li class="phone"><span class="slide-inner">0409 194 347</span></li>
+            <li class="github"><a class="slide-inner" href="#">Projects in Github</a></li>
+          </ul>
+        </aside>
+      </section>
+      <section id="portfolio" class="clearfix">
+        <h2>Recent Work</h2>
+        <a href="projects/young-achiever-award.html" class="project-tab">
+          <img src="./img/project-thumbnail-young-achiever-award.jpg" alt="the Young Achiever Award thumbnail" />
+          <h3>Young Achiever Award</h3>
+          <p>website design and development</p>
+        </a>
+        <a href="projects/the-australian-boatrace.html" class="project-tab">
+          <img src="./img/project-thumbnail-australian-boatrace.jpg" alt="the Australian Boat Race thumbnail" />
+          <h3>The Australian Boat Race</h3>
+          <p>website design and development</p>
+        </a>
+        <a href="projects/staff-homepage.html" class="project-tab last">
+          <img src="./img/project-thumbnail-staff-homepage.jpg" alt="University of Melbourne Staff Homepage thumbnail" />
+          <h3>Staff Homepage</h3>
+          <p>website design and development</p>
+        </a>
+        <a href="projects/why-melbourne.html" class="project-tab">
+          <img src="./img/project-thumbnail-why-melbourne.jpg" alt="University of Melbourne Why Melbourne thumbnail" />
+          <h3>Why Melbourne</h3>
+          <p>website design and development</p>
+        </a>
+        <a href="projects/academic-procession-webapp.html" class="project-tab">
+          <img src="./img/project-thumbnail-graduation-webapp.jpg" alt="University of Melbourne academic procession application webapp thumbnail" />
+          <h3>UoM Academic Procession</h3>
+          <p>wire framing and front end development</p>
+        </a>
+        <a href="projects/buildlock.html" class="project-tab last">
+          <img src="./img/project-thumbnail-buildlock.jpg" alt="Buildlock website thumbnail" />
+          <h3>Buildlock</h3>
+          <p>website design and development</p>
+        </a>
+        <a href="projects/change-of-preference.html" class="project-tab">
+          <img src="./img/project-thumbnail-change-of-preference.jpg" alt="University of Melbourne Change of Preference thumbnail" />
+          <h3>UoM Change of Preference</h3>
+          <p>content management</p>
+        </a>
+        <a href="projects/msi.html" class="project-tab">
+          <img src="./img/project-thumbnail-msi.jpg" alt="Melbourne School of Information thumbnail" />
+          <h3>MSI</h3>
+          <p>content management</p>
+        </a>
+        <a href="projects/msi-landingpage.html" class="project-tab last">
+          <img src="./img/project-thumbnail-msi-landingpage.jpg" alt="Melbourne School of Information Landing Page thumbnail" />
+          <h3>MSI Landing Page</h3>
+          <p>website design and development</p>
+        </a>
+      </section>      
       <hr>
     </div>
-  </div>
-  <footer>
 
-  </footer>
 
 
   <!-- JavaScript at the bottom for fast page loading -->
