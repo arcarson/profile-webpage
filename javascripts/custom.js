@@ -136,5 +136,76 @@ function limits(obj, limit){
             });
     
     
-    
+
+
+(function( $ ){
+  $.fn.jcircular = function(options) {
+
+               var carousel = $(this);
+               
+               $.fn.jcircular.defaults = {
+                              speed: 500,
+                              auto: true,
+                              auto_speed: 3000,
+                              next_class: 'next',
+                              prev_class: 'prev',
+                              wrap_class: 'm_wrap',
+                              list_per_slide: 1
+               }
+                 
+               var opts = $.extend({}, $.fn.jcircular.defaults, options);
+               
+               var list_width = carousel.find('.'+opts.wrap_class+' ul li').outerWidth(true); 
+               var width_per_slide = opts.list_per_slide * list_width;
+               var list_count = carousel.find('.'+opts.wrap_class+' li').length;
+               var ul_width = list_count * list_width;
+
+               carousel.find('.'+opts.wrap_class+' ul').css({'width':ul_width});
+               carousel.find('.'+opts.wrap_class+' ul').css({"left" : "-" + list_width + "px"}); 
+               carousel.find('.'+opts.wrap_class+' ul li:first').before(carousel.find('.'+opts.wrap_class+' ul li:last')); 
+               
+               if(carousel.find("."+opts.next_class).length == 0){
+                                carousel.append('<div style="height:0; width:0;" class=".'+opts.next_class+'></div>');
+               }
+               
+               carousel.find('.'+opts.next_class).click(function() { 
+                              carousel.find('.'+opts.wrap_class+' ul:not(:animated)').animate({left : '-=' + width_per_slide + 'px'}, opts.speed, function(){ 
+                                             carousel.find('.'+opts.wrap_class+' ul li:last').after(carousel.find('.'+opts.wrap_class+' ul li:first')); 
+                                             carousel.find('.'+opts.wrap_class+' ul').css({"left" : "-" + width_per_slide + "px"}); 
+                              }); 
+                              
+                              if(opts.auto){
+                                 clearInterval(car_int);
+                                 car_int = setInterval(function(){carousel.find('.'+opts.next_class).click();},opts.auto_speed);
+                              }
+                              
+                              return false; 
+               }); 
+               
+               carousel.find('.'+opts.prev_class).click(function() { 
+                              carousel.find('.m_wrap ul:not(:animated)').animate({left : '+=' + width_per_slide + 'px'}, opts.speed, function(){ 
+                                             carousel.find('.m_wrap ul li:first').before(carousel.find('.m_wrap ul li:last')); 
+                                             carousel.find('.m_wrap ul').css({"left" : "-" + width_per_slide + "px"}); 
+                              }); 
+                              
+                              if(opts.auto){
+                                 clearInterval(car_int);   
+                                 car_int = setInterval(function(){carousel.find('.'+opts.next_class).click();},opts.auto_speed);
+                              }
+                              
+                              return false; 
+               });
+               
+               if(opts.auto){
+                              car_int = setInterval(function(){carousel.find('.'+opts.next_class).click();},opts.auto_speed);
+               }
+  };
+               
+})(jQuery);
+
+$(function(){
+               $('#mcarousel').jcircular();             
+});
+
+
     
