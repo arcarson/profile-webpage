@@ -1,0 +1,101 @@
+[
+    {
+        "name": "Johnson's Kitchen",
+        "abbrName": "",
+        "websiteURL": "http://www.johnsons-kitchen.herokuapp.com",
+        "imgPath": "johnsons-kitchen",
+        "projectCaption": "website design and development",
+        "projectDescription": "",
+        "skills": "HTML,SCSS,JS/Jquery,Ruby on Rails,Boilerplate"
+    },
+    {
+        "name": "Why Melbourne",
+        "abbrName": "",
+        "websiteURL": "http://www.unimelb.edu.au/why/index.html",
+        "imgPath": "why-melbourne",
+        "projectCaption": "website design and development",
+        "projectDescription": "This website provides an overview of the University of Melbourne and is used to highlight some of the key advantages, opportunities and resources available to staff, students and alumni.",
+        "skills": "HTML,SCSS,JS/Jquery,Ruby on Rails"
+    },
+    {
+        "name": "Let's Open A Bar And Call It Puzzles",
+        "abbrName": "Loabacip",
+        "websiteURL": "http://letsopenabarandcallitpuzzles.com/index.html",
+        "imgPath": "loabacip",
+        "projectCaption": "website design and development",
+        "projectDescription": "",
+        "skills": "HTML,SCSS,JS/Jquery,Boilerplate"
+    },
+    {
+        "name": "University of Melbourne Staff Homepage",
+        "abbrName": "Staff Homepage",
+        "websiteURL": "http://unimelb.edu.au/staff/",
+        "imgPath": "staff-homepage",
+        "projectCaption": "website design and development",
+        "projectDescription": "This is a redevelopment of the University of Melbourne Staff Portal page which provides links to commonly used University websites and services. It also serves to provide staff with relevant news both internally and externally through several rss feeds and through Twitter.",
+        "skills": "HTML,SCSS,JS/Jquery,Omnigraffle,Photoshop,Mobile UI"
+    },
+    {
+        "name": "The Australian Boat Race",
+        "abbrName": "",
+        "websiteURL": "http://www.australianboatrace.com/",
+        "imgPath": "australian-boatrace",
+        "projectCaption": "website design and development",
+        "projectDescription": "This is a website that promotes and provides information and news regarding the Australian Boat Race, an annual boat race held between the University of Melbourne and Sydney University in the tradition of the annual Oxford and Cambridge event.",
+        "skills": "HTML,SCSS,JS/Jquery,Omnigraffle,Photoshop"
+    },
+    {
+        "name": "Medallion Club",
+        "abbrName": "",
+        "websiteURL": "http://www.medallionclub.com.au/home",
+        "imgPath": "medallion-club",
+        "projectCaption": "website development",
+        "projectDescription": "",
+        "skills": "HTML,SCSS,JS/Jquery"
+    },
+    {
+        "name": "Young Achiever Award",
+        "abbrName": "",
+        "websiteURL": "http://www.youngachiever.com.au/",
+        "imgPath": "young-achiever-award",
+        "projectCaption": "website design and development",
+        "projectDescription": "This is a website that promotes and provides information and news regarding the Young Achiever Award scholarship, an initiative between the University of Melbourne and the Melbourne Rebels Rugby team.",
+        "skills": "HTML,SCSS,JS/Jquery,Omnigraffle,Photoshop"
+    },
+    {
+        "name": "Academic Procession Application Web App",
+        "abbrName": "UoM Academic Procession",
+        "websiteURL": "",
+        "imgPath": "graduations-webapp",
+        "projectCaption": "wire framing and front end development",
+        "projectDescription": "This is an internal web app for the University of Melbourne created to simplify and streamline the process for academics applying to be part of academic processions for graduation ceremonies and for the hiring of necessary regalia.  It was also created to automate much of the backend of this process which had been very manually intensive.<br/>The app was created in Ruby on Rails and hosted on Heroku.",
+        "skills": "HTML,SCSS,Omnigraffle"
+    },
+    {
+        "name": "Melbourne School of Information",
+        "abbrName": "MSI",
+        "websiteURL": "http://msi.unimelb.edu.au/",
+        "imgPath": "msi",
+        "projectCaption": "content management",
+        "projectDescription": "This website was launched with the opening of The Melbourne School of Information which was created to bring together all IT related courses offered by the University of Melbourne and to provide information regarding study pathways and enrolments.",
+        "skills": "HTML,Markdown"
+    },
+    {
+        "name": "Buildlock",
+        "abbrName": "",
+        "websiteURL": "",
+        "imgPath": "buildlock",
+        "projectCaption": "website design and development",
+        "projectDescription": "This website was created for Buildlock, a contracting company specialising in exterior cladding and home decking. The website showcases examples of their work, gives information on the products and services they provide and is a point of contact for prospective customers.",
+        "skills": "HTML,SCSS,JS/Jquery,Photoshop"
+    },
+    {
+        "name": "Cakes by Carson",
+        "abbrName": "",
+        "websiteURL": "http://www.cakesbycarson.com.au/",
+        "imgPath": "cakesbycarson",
+        "projectCaption": "wordpress website",
+        "projectDescription": "",
+        "skills": "HTML,SCSS,Wordpress"
+    }
+]

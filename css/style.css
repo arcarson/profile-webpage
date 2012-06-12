@@ -246,15 +246,17 @@ hr { clear: both; visibility: hidden; margin: 0px;}
 
 #main-content.project-page { padding-bottom: 0px;}
 
-#profile { border-bottom: solid 1px #777777; padding-bottom: 50px;}
+#profile { border-bottom: solid 1px #777777; padding-bottom: 50px; position: relative;}
 
 #profile-main { padding-top: 50px; float: right; margin-left: 30px; width: 570px;}
 #profile-main em { font-style: normal; font-size: 25px;}
 #profile-main span { font-size: 70px; margin-left: 5px;}
-#profile-main ul { background: url('../img/skills-graph.jpg') no-repeat; width: 512px; height: 270px; position: relative; right: 19px; margin-top: 50px;}
+#profile-main ul { background: url('../img/skills-graph.jpg') no-repeat; width: 512px; height: 270px; position: absolute; bottom: 35px; list-style: none;}
+#profile-main .work-anchor { color: #019cbc; text-decoration: none; font-weight: bold;}
+#profile-main .work-anchor:hover { color: #00b0d4;}
 
 aside { padding-top: 20px;}
-aside ul { list-style: none; padding: 5px 0px 0px 22px;}
+aside ul { list-style: none; padding: 5px 0px 0px 22px; margin-bottom: 0px;}
 aside ul li { width: 56px; height: 56px; margin-bottom: 5px; overflow: hidden; display: block; 
   -webkit-border-radius: 28px;
   -moz-border-radius: 28px;
@@ -282,19 +284,23 @@ aside ul li.github .slide-inner { padding: 13px 0px 12px 95px; background: url('
  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.2);}
 .project-tab img { border: solid 1px #bbb; margin: 15px 15px 5px;}
 .project-tab h3 { font-size: 30px; color: #00b0d4; margin: 0px; text-align: center;}
+.project-tab h3 span { display: none;}
 .project-tab p { font-style: oblique; font-size: 12px; text-align: center; margin-top: 5px;}
-.project-tab.last { margin-right: 0px;}
 
 /*PROJECT PAGE STYLES*/
-#project-nav { /*border-bottom: solid 1px #898989;*/ border-top: solid 1px #dadada; position: relative; padding-top: 10px;}
-#project-nav a { text-decoration: none; font-weight: bold; font-size: 16px; color: #7b7b7b; border-radius: 20px; -moz-border-radius: 20px; -webkit-border-radius: 20px;}
-#previous-project { padding: 4px 10px 8px 32px;}
-#previous-project:hover { color: #fff; padding: 4px 10px 8px 32px; background: #00b0d4 url('../img/previous-project-button-icon.png') no-repeat 3px 3px;}
 
-#next-project { padding: 4px 34px 8px 10px; float: right; position: relative; bottom: 4px;}
-#next-project:hover { color: #fff; padding: 4px 34px 8px 10px; background: #00b0d4 url('../img/next-project-button-icon.png') no-repeat 105px 3px;}
+#project-nav { float: right; padding: 10px 0px;}
+#project-nav ul li { float: left; margin-left: 1px;}
+#project-nav ul li a { background: url('../img/project-nav-buttons.png') no-repeat; width: 34px; height: 34px;}
+#project-nav ul li a.next-project { background-position: 0px 0px;}
+#project-nav ul li a.next-project:hover { background-position: 0px -220px;}
+#project-nav ul li a.previous-project { background-position: 0px -132px;}
+#project-nav ul li a.previous-project:hover { background-position: 0px -176px;}
+#project-nav ul li a.home { background-position: 0px -44px; width: 78px;}
+#project-nav ul li a.home:hover { background-position: 0px -88px;}
 
-#project {border-bottom: solid 1px #898989; padding: 30px 0px 35px 0px;}
+
+#project { padding: 0px 0px 35px 0px; clear: both;}
 #project .project-screenshot { float: left;}
 #project img { border: solid 1px #b7b7b7; clear: both; margin: 15px;}
 #project .border { background: rgba(255, 255, 255, 0.2); border: solid 1px #aeaeae; float: left;}
@@ -308,13 +314,24 @@ aside ul li.github .slide-inner { padding: 13px 0px 12px 95px; background: url('
 
 /*FOOTER STYLES*/
 #footer { border-top: solid 1px #dadada; min-height: 140px;}
+body { height: 100%;}
 
+#test-box1 { height: 100%; width: 100px; background: red;}
+#test-box2 { height: 100%; width: 100px; background: blue;}
 
+.slider { width: 100px; overflow: hidden;}
+.slider-list { list-style: none; width: 300px; padding: 0px; margin: 0px; height: 100px; position: relative;}
 
+.slide { width: 100px; height: 100px; float: left; display: none; position: absolute; top: 0px; left: 0px;}
+.blue { background: blue;}
+.red { background: red;}
+.green { background: green;}
+.orange { background: orange;}
+.purple { background: purple;}
 
-
-
-
+.current-slide { display: block; left: 0px;}
+.last-slide { display: block; left: -100px;}
+.next-slide { display: block; left: 100px;}
 
 
 
