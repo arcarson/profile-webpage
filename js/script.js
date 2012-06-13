@@ -1,7 +1,3 @@
-/* Author:
-
-*/
-
 $(function() {
     
     // HOMEPAGE ICON ANIMATION
@@ -19,53 +15,6 @@ $(function() {
        return false;
      });
     
-    // CUSTOM IMAGE SLIDER
-    
-    var slideWidth = $('.slide').outerWidth();
-    
-    $('.slider-nav a').on('click', function() {
-      
-      var currentSlide = $('.slider-list li.current-slide');
-
-      if ($('.slider-list li.current-slide').next().length == 0) {
-        var nextSlide = $('.slider-list li:first');
-      } else {
-        var nextSlide = $('.slider-list li.current-slide').next();
-      }
-
-      if ($('.slider-list li.current-slide').prev().length == 0) {
-        var lastSlide = $('.slider-list li:last');
-      } else {
-        var lastSlide = $('.slider-list li.current-slide').prev();
-      }
-      
-      if ($(this).hasClass('last')) {
-        $('.current-slide, .next-slide, .last-slide').animate({left: '+=' + slideWidth }, function() {
-          currentSlide.removeClass('current-slide').addClass('next-slide');
-          lastSlide.removeClass('last-slide').addClass('current-slide');
-          nextSlide.removeClass('next-slide');
-          if (lastSlide.prev().length == 0) {
-             $('.slider-list li:last').addClass('last-slide');
-          } else {
-             lastSlide.prev().addClass('last-slide');
-          }        
-        });
-      } else {
-        $('.current-slide, .next-slide, .last-slide').animate({left: '-=' + slideWidth }, function() {
-          currentSlide.removeClass('current-slide').addClass('last-slide');
-          nextSlide.removeClass('next-slide').addClass('current-slide');
-          lastSlide.removeClass('last-slide');
-          if (nextSlide.next().length == 0) {
-            $('.slider-list li:first').addClass('next-slide');
-          } else {
-            nextSlide.next().addClass('next-slide');
-          }
-        });
-      }
-      $('.slide:not(.current-slide, .next-slide, .last-slide)').css({left: ''});
-      return false;
-    });
-    
     // JSON CONTENT LOADER
     
     $.getJSON("projects.json", function(data) {
@@ -80,6 +29,9 @@ $(function() {
               navArr.push(item.name);
               if (item.name == contentToLoad) {
                 $('#project-text h1').append(item.name);
+                if(item.githubURL != '') {
+                  $('#project-text').append('<a href="'+ item.githubURL +'" class="github-button" target="_blank"><span></span>View the code on Github</a>');
+                }
                 if(item.websiteURL != '') {
                   $('#project-text').append('<a href="'+ item.websiteURL +'" target="_blank">Visit the website</a>');
                 }

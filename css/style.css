@@ -305,39 +305,39 @@ aside ul li.github .slide-inner { padding: 13px 0px 12px 95px; background: url('
 #project img { border: solid 1px #b7b7b7; clear: both; margin: 15px;}
 #project .border { background: rgba(255, 255, 255, 0.2); border: solid 1px #aeaeae; float: left;}
 #project-text { width: 306px; float: left; margin-right: 20px;}
-#project-text h1 { margin: 0px 0px 20px 0px; line-height: 1.25em; font-size: 30px;}
-#project-text a { color: #019cbc; text-decoration: none;/* text-shadow: none;*/ font-weight: bold;}
+#project-text h1 { margin: 0px 0px 15px 0px; line-height: 1.25em; font-size: 30px;}
+#project-text a { color: #019cbc; text-decoration: none;/* text-shadow: none;*/ font-weight: bold; display: inline-block;}
 #project-text a:hover { color: #00b0d4;}
+#project-text a.github-button { color: #353535; display: inline-block; padding: 5px 10px 4px 5px; margin-bottom: 15px; border: solid 1px #adadad; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.6);
+  background: #e8e8e8; /* Old browsers */
+  background: -moz-linear-gradient(top,  #e8e8e8 0%, #cecece 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e8e8e8), color-stop(100%,#cecece)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #e8e8e8 0%,#cecece 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #e8e8e8 0%,#cecece 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #e8e8e8 0%,#cecece 100%); /* IE10+ */
+  background: linear-gradient(top,  #e8e8e8 0%,#cecece 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8e8e8', endColorstr='#cecece',GradientType=0 ); /* IE6-9 */
+  }
+#project-text a.github-button span { width: 33px; height: 25px; padding-right: 3px; display: block; float: left; background: url('../img/github-icon-grey.png') no-repeat;}
+#project-text a.github-button:hover { background: #dddddd; /* Old browsers */
+background: -moz-linear-gradient(top,  #dddddd 0%, #c1c1c1 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dddddd), color-stop(100%,#c1c1c1)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #dddddd 0%,#c1c1c1 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #dddddd 0%,#c1c1c1 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #dddddd 0%,#c1c1c1 100%); /* IE10+ */
+background: linear-gradient(top,  #dddddd 0%,#c1c1c1 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#c1c1c1',GradientType=0 ); /* IE6-9 */
 
+
+
+
+  }
 #skills p { background: url('../img/tick-icon.png') no-repeat 128px 0px; }
 
 
 /*FOOTER STYLES*/
 #footer { border-top: solid 1px #dadada; min-height: 140px;}
 body { height: 100%;}
-
-#test-box1 { height: 100%; width: 100px; background: red;}
-#test-box2 { height: 100%; width: 100px; background: blue;}
-
-.slider { width: 100px; overflow: hidden;}
-.slider-list { list-style: none; width: 300px; padding: 0px; margin: 0px; height: 100px; position: relative;}
-
-.slide { width: 100px; height: 100px; float: left; display: none; position: absolute; top: 0px; left: 0px;}
-.blue { background: blue;}
-.red { background: red;}
-.green { background: green;}
-.orange { background: orange;}
-.purple { background: purple;}
-
-.current-slide { display: block; left: 0px;}
-.last-slide { display: block; left: -100px;}
-.next-slide { display: block; left: 100px;}
-
-
-
-
-
-
 
 /* ==|== media queries ======================================================
    EXAMPLE Media Query for Responsive Design.
