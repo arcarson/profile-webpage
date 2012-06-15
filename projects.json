@@ -4,7 +4,7 @@
         "abbrName": "",
         "websiteURL": "http://www.recipewall.herokuapp.com",
         "githubURL": "https://github.com/arcarson/recipe-index",
-        "imgPath": "recipe-wall",
+        "imgPath": "recipe-wall-1,recipe-wall-2,recipe-wall-3,recipe-wall-4",
         "projectCaption": "website design and development",
         "projectDescription": "",
         "skills": "HTML,SCSS,JS/Jquery,Ruby on Rails"
@@ -14,7 +14,7 @@
         "abbrName": "",
         "websiteURL": "http://www.johnsons-kitchen.herokuapp.com",
         "githubURL": "https://github.com/arcarson/johnsons-kitchen-rails",
-        "imgPath": "johnsons-kitchen",
+        "imgPath": "johnsons-kitchen-1,johnsons-kitchen-2,johnsons-kitchen-3,johnsons-kitchen-4",
         "projectCaption": "website design and development",
         "projectDescription": "",
         "skills": "HTML,SCSS,JS/Jquery,Ruby on Rails,Boilerplate"
@@ -34,7 +34,7 @@
         "abbrName": "Loabacip",
         "websiteURL": "http://letsopenabarandcallitpuzzles.com/index.html",
         "githubURL": "https://github.com/arcarson/loabacip",
-        "imgPath": "loabacip",
+        "imgPath": "loabacip-1",
         "projectCaption": "website design and development",
         "projectDescription": "",
         "skills": "HTML,SCSS,JS/Jquery,Boilerplate"

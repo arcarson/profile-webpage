@@ -301,9 +301,10 @@ aside ul li.github .slide-inner { padding: 13px 0px 12px 95px; background: url('
 
 
 #project { padding: 0px 0px 35px 0px; clear: both;}
-#project .project-screenshot { float: left;}
-#project img { border: solid 1px #b7b7b7; clear: both; margin: 15px;}
-#project .border { background: rgba(255, 255, 255, 0.2); border: solid 1px #aeaeae; float: left;}
+#project #project-screenshot { float: left; position: relative;}
+/*#project img { border: solid 1px #b7b7b7; clear: both; margin: 15px;}*/
+#project img { border: solid 1px #aeaeae; clear: both; padding: 15px; background: rgba(255, 255, 255, 0.2);}
+/*#project .border { background: rgba(255, 255, 255, 0.2); border: solid 1px #aeaeae; float: left;}*/
 #project-text { width: 306px; float: left; margin-right: 20px;}
 #project-text h1 { margin: 0px 0px 15px 0px; line-height: 1.25em; font-size: 30px;}
 #project-text a { color: #019cbc; text-decoration: none;/* text-shadow: none;*/ font-weight: bold; display: inline-block;}
@@ -327,13 +328,21 @@ background: -o-linear-gradient(top,  #dddddd 0%,#c1c1c1 100%); /* Opera 11.10+ *
 background: -ms-linear-gradient(top,  #dddddd 0%,#c1c1c1 100%); /* IE10+ */
 background: linear-gradient(top,  #dddddd 0%,#c1c1c1 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#c1c1c1',GradientType=0 ); /* IE6-9 */
-
-
-
-
   }
 #skills p { background: url('../img/tick-icon.png') no-repeat 128px 0px; }
 
+#project-screenshot ul { list-style: none; margin: 0px; padding: 0px;}
+
+#viewer-window { overflow: hidden; margin: 0px auto;}
+#viewer-window > ul { list-style: none; padding: 0px; position: relative;}
+#viewer-window > ul > li { display: none; float: left; position: absolute; top: 0px; left: 0px;}
+#viewer-window > ul li.current-slide { display: block; left: 0px;}
+#viewer-window > ul li.last-slide { display: block; left: -612px;}
+#viewer-window > ul li.next-slide { display: block; left: 612px;}
+.next { position: absolute; top: 200px; right: 25px; background: url('../img/button-sprite.png') no-repeat 0px -0px; width: 45px; height: 45px;}
+.next:hover { background: url('../img/button-sprite.png') no-repeat 0px -55px; width: 45px; height: 45px;}
+.last { position: absolute; top: 200px; left: 25px; background: url('../img/button-sprite.png') no-repeat 0px -110px; width: 45px; height: 45px;}
+.last:hover { background: url('../img/button-sprite.png') no-repeat 0px -165px; width: 45px; height: 45px;}
 
 /*FOOTER STYLES*/
 #footer { border-top: solid 1px #dadada; min-height: 140px;}

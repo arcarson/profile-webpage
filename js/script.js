@@ -19,7 +19,8 @@ $(function() {
     
     $.getJSON("projects.json", function(data) {
         var navArr = [];
-        var contentToLoad = $.cookie('project');        
+        // var contentToLoad = $.cookie('project');
+        var contentToLoad = 'Recipe Wall App'
         loadContent(contentToLoad);
 
         function loadContent(contentToLoad) {          
@@ -43,7 +44,16 @@ $(function() {
                   $('#project-text').append('<section id="skills"></section>')              
                   $.each(skills, function(index, value) {
                     $("#skills").append('<p>' + value + '</p>');
+                  });                
+                }
+                var images = item.imgPath.split(',');
+                if(images.length > 1) {
+                  $('#project-screenshot').append('<ul></ul><a href="#" class="next"></a><a href="#" class="last"></a>');
+                  $.each(images, function(index, image) {
+                    $('#project-screenshot ul').append('<li><img src="./img/project-screenshot-'+ image +'.jpg" alt="'+ item.name +' website screenshot" /></li>');
                   });
+                  imageSlider();
+                } else {
                   $('#project-screenshot').append('<img src="./img/project-screenshot-'+ item.imgPath +'.jpg" alt="'+ item.name +' website screenshot" />')
                 }
               }
@@ -69,7 +79,7 @@ $(function() {
           var navArr = [];            
           var contentToLoad = $(this).attr('title');
           $('#project-text h1').html('');
-          $('#project-text a, #project-text p, #skills, #project-screenshot img').remove();
+          $('#project-text a, #project-text p, #skills, #project-screenshot > *').remove();
           loadContent(contentToLoad);
         });
         // HOMEPAGE PROJECT TAB HOVER
@@ -92,6 +102,53 @@ $(function() {
         });
     });
 });
+
+// CUSTOM IMAGE SLIDER
+
+function imageSlider() {  
+  var viewer = $('#project-screenshot');
+  viewer.children('ul').wrapAll('<div id="viewer-window" />');
+  var slideList = $('#viewer-window > ul');
+  var slides = $('#viewer-window > ul > li');
+  var slideWidth = slides.outerWidth();
+  var maxSlideHeight = Math.max.apply(null, slides.map(function () {
+      return $(this).height();
+  }).get());
+  
+  var selectedSlide = $.cookie('selectedSlide');
+  slideList.css({'width' : slideWidth, 'height' : maxSlideHeight});
+  slides.find('h2:contains(' + selectedSlide + ')').parent().parent().addClass('current-slide');
+  if (slides.filter('.current-slide').length == 0) { slides.filter(':first').addClass('current-slide')};
+  slides.filter('.current-slide').next().length == 0 ? slides.filter(':first').addClass('next-slide') : slides.filter('.current-slide').next().addClass('next-slide');
+  slides.filter('.current-slide').prev().length == 0 ? slides.filter(':last').addClass('last-slide') : slides.filter('.current-slide').prev().addClass('last-slide');
+
+  // nav click functions
+  viewer.children('a').on('click', function() {
+  var activeSlides = slides.filter('.current-slide, .next-slide, .last-slide');
+  var currentSlide = slides.filter('.current-slide');
+  var nextSlide = currentSlide.next().length == 0 ? slides.filter(':first') : currentSlide.next();
+  var lastSlide = currentSlide.prev().length == 0 ? slides.filter(':last') : currentSlide.prev();
+
+  if ($(this).hasClass('last')) {
+      activeSlides.animate({left: '+=' + slideWidth }, function() {
+        currentSlide.removeClass('current-slide').addClass('next-slide');
+        lastSlide.removeClass('last-slide').addClass('current-slide');
+        nextSlide.removeClass('next-slide');
+        lastSlide.prev().length == 0 ? slides.filter(':last').addClass('last-slide') : lastSlide.prev().addClass('last-slide');
+      });
+    } else {
+      $('.current-slide, .next-slide, .last-slide').animate({left: '-=' + slideWidth }, function() {
+        currentSlide.removeClass('current-slide').addClass('last-slide');
+        nextSlide.removeClass('next-slide').addClass('current-slide');
+        lastSlide.removeClass('last-slide');
+        nextSlide.next().length == 0 ? slides.filter(':first').addClass('next-slide') : nextSlide.next().addClass('next-slide');
+      });
+    }
+    slides.filter(':not(.current-slide, .next-slide, .last-slide)').css({left: ''});
+    return false;
+  });
+  
+};
 
 
 
