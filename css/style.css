@@ -283,7 +283,7 @@ aside ul li.github .slide-inner { padding: 13px 0px 12px 95px; background: url('
  -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.2);
  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.2);}
 .project-tab img { border: solid 1px #bbb; margin: 15px 15px 5px;}
-.project-tab h3 { font-size: 30px; color: #00b0d4; margin: 0px; text-align: center;}
+.project-tab h3 { font-size: 30px; color: #00b0d4; margin: 0px; text-align: center; font-weight: 300;}
 .project-tab h3 span { display: none;}
 .project-tab p { font-style: oblique; font-size: 12px; text-align: center; margin-top: 5px;}
 
@@ -332,17 +332,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', end
 #skills p { background: url('../img/tick-icon.png') no-repeat 128px 0px; }
 
 #project-screenshot ul { list-style: none; margin: 0px; padding: 0px;}
-
+#project-screenshot ul li { display: none;}
 #viewer-window { overflow: hidden; margin: 0px auto;}
 #viewer-window > ul { list-style: none; padding: 0px; position: relative;}
 #viewer-window > ul > li { display: none; float: left; position: absolute; top: 0px; left: 0px;}
 #viewer-window > ul li.current-slide { display: block; left: 0px;}
 #viewer-window > ul li.last-slide { display: block; left: -612px;}
 #viewer-window > ul li.next-slide { display: block; left: 612px;}
-.next { position: absolute; top: 200px; right: 25px; background: url('../img/button-sprite.png') no-repeat 0px -0px; width: 45px; height: 45px;}
-.next:hover { background: url('../img/button-sprite.png') no-repeat 0px -55px; width: 45px; height: 45px;}
-.last { position: absolute; top: 200px; left: 25px; background: url('../img/button-sprite.png') no-repeat 0px -110px; width: 45px; height: 45px;}
-.last:hover { background: url('../img/button-sprite.png') no-repeat 0px -165px; width: 45px; height: 45px;}
+.next { position: absolute; top: 200px; right: 25px; background: url('../img/button-sprite.png') no-repeat 0px -108px; width: 43px; height: 44px;}
+.next:hover { background: url('../img/button-sprite.png') no-repeat 0px -162px; width: 43px; height: 44px;}
+.last { position: absolute; top: 200px; left: 25px; background: url('../img/button-sprite.png') no-repeat 0px 0px; width: 43px; height: 44px;}
+.last:hover { background: url('../img/button-sprite.png') no-repeat 0px -54px; width: 43px; height: 44px;}
 
 /*FOOTER STYLES*/
 #footer { border-top: solid 1px #dadada; min-height: 140px;}

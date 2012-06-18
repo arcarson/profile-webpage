@@ -40,6 +40,16 @@
         "skills": "HTML,SCSS,JS/Jquery,Boilerplate"
     },
     {
+        "name": "University of Melbourne Marketing and Communications Website",
+        "abbrName": "UoM Marcom Website",
+        "websiteURL": "http://marcom.unimelb.edu.au/",
+        "githubURL": "",
+        "imgPath": "marcom-1,marcom-2,marcom-3,marcom-4,marcom-5",
+        "projectCaption": "website design and development",
+        "projectDescription": "",
+        "skills": "HTML,SCSS,JS/Jquery,Photoshop"
+    },
+    {
         "name": "University of Melbourne Staff Homepage",
         "abbrName": "Staff Homepage",
         "websiteURL": "http://unimelb.edu.au/staff/",
@@ -108,15 +118,5 @@
         "projectCaption": "website design and development",
         "projectDescription": "This website was created for Buildlock, a contracting company specialising in exterior cladding and home decking. The website showcases examples of their work, gives information on the products and services they provide and is a point of contact for prospective customers.",
         "skills": "HTML,SCSS,JS/Jquery,Photoshop"
-    },
-    {
-        "name": "Cakes by Carson",
-        "abbrName": "",
-        "websiteURL": "http://www.cakesbycarson.com.au/",
-        "githubURL": "",
-        "imgPath": "cakesbycarson",
-        "projectCaption": "wordpress website",
-        "projectDescription": "",
-        "skills": "HTML,SCSS,Wordpress"
     }
 ]
