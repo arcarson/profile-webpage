@@ -15,7 +15,7 @@ $(function() {
        return false;
      });
     
-    // JSON CONTENT LOADER
+    // JSON CONTENT LOADER - while I admit it's never really best practice to load the main content of a page through ajax for a number of reasons, I've taken this as more of an opportunity to demonstrate proficiency in this area.
     
     $.getJSON("projects.json", function(data) {
         // set array to hold project names for next/prev navigation
